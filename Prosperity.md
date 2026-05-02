@@ -17,27 +17,29 @@ $$
 
 This will then be rounded down to 100, the maximum possible prosperity value.
 
+[Julius /src/city/ratings.c#L449](https://github.com/bvschaik/julius/blob/016d5254c2b734dac5c56abccac05c0ba74cb934/src/city/ratings.c#L449)
+
 ## Gain Rate
 
 Prosperity is calculated once a year in January. A maximum number of 10 prosperity 
-points can be gained per year. To calculate the points gained, the following table can 
-be used. The values are added together and represent the number of prosperity points
-for the year.
+points can be gained per year. To calculate the points, the following table can be 
+used. The values are added up and represent the number of prosperity points awarded for 
+the past year.
 
 ### Determinants
 
-| Determinants                                 | Value |
-|----------------------------------------------|-------|
-| Base gain rate                               | 2     |
-| City made a profit                           | 2     |
-| ≥ 10% of population are patricians           | 1     |
-| < 30% of population lives in shacks or lower | 1     |
-| < 5% unemployment                            | 1     |
-| ≥ 2 Dn more than Rome's wage                 | 1     |
-| 2 food types for citizens < Grand Insula     | 1     |
-| Active Hippodrome                            | 1     |
-| City made a loss                             | -1    |
-| \> 15% unemployment                          | -1    |
-| Wages are below Rome's                       | -1    |
-| Failure to pay tribute                       | -3    |
-| Receive Bailout from Caesar                  | -3    |
+| Determinants                                   | Value |
+|------------------------------------------------|-------|
+| ≤ 4% unemployment                              | +1    |
+| ≥ 15% unemployment                             | -1    |
+| City made a profit                             | +5    |
+| City made a loss                               | -1    |
+| At least 2 food types eaten                    | +1    |
+| Wages ≥ 2 Dn higher than Rome's **on average** | +1    |
+| Wages lower than Rome's **on average**         | -1    |
+| \> 10% of population are patricians            | +1    |
+| \> 30% of population lives in shacks or lower  | -1    |
+| Failure to pay tribute                         | -1    |
+| Active Hippodrome                              | +1    |
+
+[Julius /src/city/ratings.c#L398](https://github.com/bvschaik/julius/blob/016d5254c2b734dac5c56abccac05c0ba74cb934/src/city/ratings.c#L398)
