@@ -181,5 +181,5 @@ So a market starts with a desirability value of -2, and then increases by one fo
 up to six tiles. That means a market is an undesirable neighbour only if it is too close since
 the value becomes positive starting at a distance of four tiles.
 
-Negative change als exists, for example `30,Ampitheatre,{,100,4,1,-1,4,12,0,0,},` with a 
+Negative change also exists, for example `30,Ampitheatre,{,100,4,1,-1,4,12,0,0,},` with a 
 starting desirability value of four, decreased by one for each tile up to four.

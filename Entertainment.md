@@ -4,19 +4,19 @@
 
 ## Base Values
 
-| Venue        | No. of Shows | Points | 
-|--------------|--------------|--------|
-| Theatre      | n/a          | 10     |
-| Amphitheatre | 0-1          | 10     |
-| Amphitheatre | 2            | 15     |
-| Colosseum    | 0-1          | 15     |
-| Colosseum    | 2            | 25     |
-| Hippodrome   | n/a          | 30     |
+These are applied to a house when a walker passes by.
+
+| Venue        | No. of Shows | Points   | 
+|--------------|--------------|----------|
+| Theatre      | 0-1          | 10       |
+| Amphitheatre | 0-1<br>2     | 10<br>15 |
+| Colosseum    | 0-1<br>2     | 15<br>25 |
+| Hippodrome   | n/a          | 30       |
 
 ## Perfect Coverage Bonus
 
 Additionally, each type of venue can generate a bonus of 5 points if perfect coverage 
-is achieved.  
+is achieved. These work globally.  
 Note: Hippodrome coverage is always perfect.
 
 | Coverage Index | Advisor reports |
