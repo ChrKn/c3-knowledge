@@ -1,0 +1,33 @@
+# Entertainment
+
+[Source](https://caesar3.heavengames.com/cgi-bin/caeforumscgi/display.cgi?action=st&fn=2&tn=2859)
+
+## Base Values
+
+| Venue        | No. of Shows | Points | 
+|--------------|--------------|--------|
+| Theatre      | n/a          | 10     |
+| Amphitheatre | 0-1          | 10     |
+| Amphitheatre | 2            | 15     |
+| Colosseum    | 0-1          | 15     |
+| Colosseum    | 2            | 25     |
+| Hippodrome   | n/a          | 30     |
+
+## Perfect Coverage Bonus
+
+Additionally, each type of venue can generate a bonus of 5 points if perfect coverage 
+is achieved.  
+Note: Hippodrome coverage is always perfect.
+
+| Coverage Index | Advisor reports |
+|----------------|-----------------|
+| 1.00           | Perfect         |
+| 0.90-0.99      | Excellent       |
+| 0.80-0.89      | Very Good       |
+| 0.70-0.79      | Good            |
+| 0.60-0.69      | Above Average   |
+| 0.40-0.59      | Average         |
+| 0.30-0.39      | Below Average   |
+| 0.20-0.29      | Poor            |
+| 0.10-0.19      | Very Poor       |
+| 0.00-0.09      | None            |
