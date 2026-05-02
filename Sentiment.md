@@ -43,7 +43,7 @@ aggregated for the city as a whole. It is calculated twice a month.
 | \> 17 | -2           |
 | \> 10 | -1           |
 | \> 4  | 0            |
-| \< 4  | 1            |
+| ≤ 4   | 1            |
 
 [Julius /src/city/sentiment.c#L150](https://github.com/bvschaik/julius/blob/016d5254c2b734dac5c56abccac05c0ba74cb934/src/city/sentiment.c#L150)
 
@@ -58,7 +58,7 @@ aggregated for the city as a whole. It is calculated twice a month.
 | = 0 Dn             | ±0                                 |
 | < 0 Dn             | -$truncate(\frac{difference}{2})$  |
 
-Note: The formula is integer-division, if the result is zero, -1 is applied. 
+Note: The formula for a negative difference is integer-division, if the result is zero, -1 is applied. 
 
 [Julius /src/city/sentiment.c#L128](https://github.com/bvschaik/julius/blob/016d5254c2b734dac5c56abccac05c0ba74cb934/src/city/sentiment.c#L128)
  
@@ -98,7 +98,7 @@ first table that applies is used.
 | ≥ 40%               | -2            |
 | ≥ 26%               | -3            |
 | ≥ 10%               | -4            |
-| \< 10%              | -5            |
+| < 10%               | -5            |
 
 ### Case 3: The fallback case if the first two cases don't apply
 
@@ -107,6 +107,6 @@ first table that applies is used.
 | ≥ 40%               | 0             |
 | ≥ 26%               | -1            |
 | ≥ 10%               | -2            |
-| \< 10%              | -3            |
+| < 10%               | -3            |
 
 [Julius /src/city/sentiment.c#L79](https://github.com/bvschaik/julius/blob/016d5254c2b734dac5c56abccac05c0ba74cb934/src/city/sentiment.c#L79)

@@ -8,14 +8,12 @@ By courtesy of [DDRJake](https://www.twitch.tv/ddrjake)
 2. Save your file as an uncompressed C3 format (.c3u format)
 3. Open your .c3u file with the hex editor of your choice
 4. Locate the offsets listed below and change to your liking
-5. Save the .c3u file
-6. Load the .c3u file in C3GameExplorer
+5. Save the .c3u file from your hex editor
+6. Load the .c3u file in C3GameExplorer (actually reload it)
 7. Save it as a .sav file
 8. Load your new .sav file in Caesar 3 and enjoy
 
 **Offsets**
-
-Note that these are stored as hexadecimal values, so 0a is ten and ff is 255
 
 0x126140 – Set to `01` for favour locked at 50 and removal of all win conditions. Lets you play forever.
 0x126244 – Gladiator Revolt.  `01` is ON, `00` is OFF
