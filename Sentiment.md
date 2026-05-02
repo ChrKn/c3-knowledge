@@ -1,23 +1,47 @@
-# Sentiment
+# Sentiment (Mood)
 
-Sentiment is represented as a value between 0 (lowest) and 100 (highest). It is 
+Sentiment is represented as a value between 0 (lowest) and 100 (highest)<sup>1</sup>. It is 
 evaluated on a per-lodging level, as in every house has its own sentiment which is then 
-aggregated for the city as a whole. It is calculated twice a month.
+aggregated for the city as a whole. It is calculated twice a month if the population has 
+reached 300 people or more.
+
+<sup>1</sup> [Julius: /src/city/sentiment.c#L239](https://github.com/bvschaik/julius/blob/016d5254c2b734dac5c56abccac05c0ba74cb934/src/city/sentiment.c#L239)     
+
+## Starting Sentiment by Difficulty
+
+| Difficulty | Sentiment |
+|------------|-----------|
+| Very Easy  | 80        |
+| Easy       | 70        |
+| Normal     | 60        |
+| Hard       | 50        |
+| Very Hard  | 40        |
+
+[Julius: /src/game/difficulty.c#L11](https://github.com/bvschaik/julius/blob/016d5254c2b734dac5c56abccac05c0ba74cb934/src/game/difficulty.c#L11)
 
 ## Cutoffs
 
-| Description       | Value |
-|-------------------|-------|
-| Love              | \> 90 |
-| Extremely pleased | \> 80 |
-| Very pleased      | \> 70 |
-| Pleased           | \> 60 |
-| Indifferent       | \> 50 |
-| ...               | n/a   |
+These values were found by extracting the translation files from the game and comparing them
+with the function call that displays the actual message. To make the .eng files, C3 uses for 
+the translations, readable, [this converter](https://github.com/bvschaik/citybuilding-tools) 
+was used. The values can be found in c3.eng.
 
-[//]: # (TODO: Add negative cutoffs)
+| Description                           | Value |
+|---------------------------------------|-------|
+| You are loathed throughout the city   | ≤ 0   |
+| People are very angry with you        | ≤ 10  |
+| People are angry with you             | ≤ 20  |
+| People are very upset with you        | ≤ 30  |
+| People are upset with you             | ≤ 40  |
+| People are annoyed with you           | ≤ 50  |
+| People are indifferent to you         | ≤ 60  |
+| People are pleased with you           | ≤ 70  |
+| People are very pleased with you      | ≤ 80  |
+| People are extremely pleased with you | ≤ 90  |
+| People love you                       | ≤ 99  |
+| People idolize you as a god           | ≥ 100 |
 
-[Heaven Games](https://caesar3.heavengames.com/cgi-bin/caeforumscgi/display.cgi?action=st&fn=2&tn=6838)
+[Julius: /src/window/advisor/chief.c#L203](https://github.com/bvschaik/julius/blob/016d5254c2b734dac5c56abccac05c0ba74cb934/src/window/advisor/chief.c#L203)
 
 ## Taxes
 
@@ -33,7 +57,7 @@ aggregated for the city as a whole. It is calculated twice a month.
 | 15% - 18% | -5           |
 | 19% - 25% | -6           |
 
-[Julius /src/city/sentiment.c#L14](https://github.com/bvschaik/julius/blob/016d5254c2b734dac5c56abccac05c0ba74cb934/src/city/sentiment.c#L14)
+[Julius: /src/city/sentiment.c#L14](https://github.com/bvschaik/julius/blob/016d5254c2b734dac5c56abccac05c0ba74cb934/src/city/sentiment.c#L14)
 
 ## Unemployment
 
@@ -45,7 +69,7 @@ aggregated for the city as a whole. It is calculated twice a month.
 | \> 4  | 0            |
 | ≤ 4   | 1            |
 
-[Julius /src/city/sentiment.c#L150](https://github.com/bvschaik/julius/blob/016d5254c2b734dac5c56abccac05c0ba74cb934/src/city/sentiment.c#L150)
+[Julius: /src/city/sentiment.c#L150](https://github.com/bvschaik/julius/blob/016d5254c2b734dac5c56abccac05c0ba74cb934/src/city/sentiment.c#L150)
 
 ## Wages
 
@@ -60,7 +84,7 @@ aggregated for the city as a whole. It is calculated twice a month.
 
 Note: The formula for a negative difference is integer-division, if the result is zero, -1 is applied. 
 
-[Julius /src/city/sentiment.c#L128](https://github.com/bvschaik/julius/blob/016d5254c2b734dac5c56abccac05c0ba74cb934/src/city/sentiment.c#L128)
+[Julius: /src/city/sentiment.c#L128](https://github.com/bvschaik/julius/blob/016d5254c2b734dac5c56abccac05c0ba74cb934/src/city/sentiment.c#L128)
  
 ## Festivals 
 
@@ -72,7 +96,7 @@ Festivals bring an immediate boost to your people's happiness in accordance with
 | Large Festival           | +9           | +3          |
 | Grand Festival           | +12          | +5          |
 
-[Julius /src/city/festival.c#L92](https://github.com/bvschaik/julius/blob/016d5254c2b734dac5c56abccac05c0ba74cb934/src/city/festival.c#L92)
+[Julius: /src/city/festival.c#L92](https://github.com/bvschaik/julius/blob/016d5254c2b734dac5c56abccac05c0ba74cb934/src/city/festival.c#L92)
 
 ## Tent Penalties
 
@@ -109,4 +133,4 @@ first table that applies is used.
 | ≥ 10%               | -2            |
 | < 10%               | -3            |
 
-[Julius /src/city/sentiment.c#L79](https://github.com/bvschaik/julius/blob/016d5254c2b734dac5c56abccac05c0ba74cb934/src/city/sentiment.c#L79)
+[Julius: /src/city/sentiment.c#L79](https://github.com/bvschaik/julius/blob/016d5254c2b734dac5c56abccac05c0ba74cb934/src/city/sentiment.c#L79)
