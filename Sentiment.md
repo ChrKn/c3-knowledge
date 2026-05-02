@@ -22,9 +22,9 @@ reached 300 people or more.
 ## Cutoffs
 
 These values were found by extracting the translation files from the game and comparing them
-with the function call that displays the actual message. To make the .eng files, C3 uses for 
-the translations, readable, [this converter](https://github.com/bvschaik/citybuilding-tools) 
-was used. The values can be found in c3.eng.
+with the function call that displays the actual message. To make the `.eng` files containing the 
+translations human-readable, [this converter](https://github.com/bvschaik/citybuilding-tools) 
+was used. The values we needed were found in `c3.eng`.
 
 | Description                           | Value |
 |---------------------------------------|-------|
