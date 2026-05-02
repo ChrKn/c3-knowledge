@@ -90,7 +90,7 @@ first table that applies is used.
 | ≥ 10%               | -5            |
 | < 10%               | -6            |
 
-### Case 2: The city has Large Insulae
+### Case 2: The city has Large Insulae or above
 
 | Percentage of Tents | Sent. Penalty |
 |---------------------|---------------|

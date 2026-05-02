@@ -8,7 +8,7 @@ to successfully defend the city.
 |--------------------|--------------------| 
 | Small              | < 46               | 
 | Average            | < 89               | 
-| Large              | \>= 89             | 
+| Large              | ≥ 89               | 
 
 Each soldier in a legion is worth one strength point. So a 16-unit legion
 has a base strength of 16. There is also a force multiplier: Legionaries 

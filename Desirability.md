@@ -152,3 +152,34 @@ An overview of buildings' desirability effects at different ranges.
 | Fountain  | 0  | 0  | 0  | 0 | 0 | 0 |
 | Reservoir | -6 | -4 | -2 | 0 | 0 | 0 |
 | Well      | -1 | 0  | 0  | 0 | 0 | 0 |
+
+
+## Source to check the values
+
+In the C3 installation folder is a file called `c3_model.txt` that contains a bunch 
+of values concerning buildings. 
+
+If we look at this line: `56,Triumphal Arch,{,0,18,2,3,5,0,0,0,},` we can extract 
+the following information concerning desirability: 
+
+1. Start value (18)
+2. Step length (2)
+3. Desirability change per step (3)
+4. Maximum desirability range (5)
+
+That means a triumphal arch has a desirability value of 18 at a range of one or two tiles. Then 
+it will increase to 21 for the tiles three and four, and then finally to 24 for tile five.
+
+Another example: `70,Market,{,40,-2,1,1,6,5,0,0,}`
+
+1. Start value (-2)
+2. Step length (1)
+3. Desirability change per step (1)
+4. Maximum desirability range (6)
+
+So a market starts with a desirability value of -2, and then increases by one for each tile 
+up to six tiles. That means a market is an undesirable neighbour only if it is too close since
+the value becomes positive starting at a distance of four tiles.
+
+Negative change als exists, for example `30,Ampitheatre,{,100,4,1,-1,4,12,0,0,},` with a 
+starting desirability value of four, decreased by one for each tile up to four.
