@@ -73,14 +73,14 @@ was used. The values we needed were found in `c3.eng`.
 
 ## Wages
 
-| Difference to Rome | Sent. Change                      |
-|--------------------|-----------------------------------|
-| \> 7 Dn            | +4                                |
-| \> 4 Dn            | +3                                |
-| \> 1 Dn            | +2                                |
-| \> 0 Dn            | +1                                |
-| = 0 Dn             | ±0                                |
-| < 0 Dn             | $-truncate(\frac{difference}{2})$ |
+| Difference to Rome | Sent. Change                     |
+|--------------------|----------------------------------|
+| \> 7 Dn            | +4                               |
+| \> 4 Dn            | +3                               |
+| \> 1 Dn            | +2                               |
+| \> 0 Dn            | +1                               |
+| = 0 Dn             | ±0                               |
+| < 0 Dn             | $truncate(\frac{difference}{2})$ |
 
 Note: The formula for a negative difference is integer-division, if the result is zero, -1 is applied. 
 

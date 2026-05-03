@@ -6,7 +6,7 @@ To see how desirability affects housing levels, see [Housing.md](/Housing.md).
 
 An overview of buildings' desirability effects at different ranges.
 
-[Source](https://caesar3.heavengames.com/downloads/showfile.php?fileid=1197)
+[Source: Heaven Games](https://caesar3.heavengames.com/downloads/showfile.php?fileid=1197)
 
 **Administrative**
 
