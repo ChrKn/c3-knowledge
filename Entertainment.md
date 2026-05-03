@@ -13,8 +13,8 @@ These are applied to a house when a walker passes by.
 
 ## Perfect Coverage Bonus
 
-Additionally, each type of venue can generate a bonus of 5 points if perfect coverage 
-is achieved. These work globally.  
+Additionally, each type of venue can generate a bonus of up to 5 points 
+scaling to coverage. These work globally.  
 Note: Hippodrome coverage is always perfect.
 
 | Coverage Index | Advisor reports |
