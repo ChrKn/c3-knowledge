@@ -31,7 +31,7 @@ $$
 
 ## How it works
 
-Every housing level has a tax multiplier (tm). These can be found [here](/Housing.md). 
+Every housing level has a tax multiplier (tm). These can be found [here](/Housing.md).  
 Additionally, the amount of money the player earns is modified by a difficulty 
 multiplier (dm).
 
@@ -99,3 +99,13 @@ $$
 $$
 
 [Source: Julius /src/city/finance.c#L213](https://github.com/bvschaik/julius/blob/016d5254c2b734dac5c56abccac05c0ba74cb934/src/city/finance.c#L213)
+
+### Thoughts
+
+If we view what I christened 'max' as the income of the house, everything
+makes a lot more sense to me. In the source code it is called 'tax', so 
+that threw me off. The tax modifier of a house would then be the base 
+income per pop. Then halving the income would basically just reduce the 
+total income to the taxable income before the tax is applied.
+
+But that's me theorizing.
