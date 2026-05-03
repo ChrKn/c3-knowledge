@@ -1,7 +1,5 @@
 # Change scenario settings in Caesar 3 savegames via hex editing
 
-By courtesy of [DDRJake](https://www.twitch.tv/ddrjake)
-
 **Instructions**
 
 1. Open your save file with [C3GameExplorer](https://caesar3.heavengames.com/downloads/showfile.php?fileid=914)
@@ -28,3 +26,5 @@ By courtesy of [DDRJake](https://www.twitch.tv/ddrjake)
 * 0x126268 – Iron Mine Collapses. `01` is ON, `00` is OFF
 * 0x12626c – Clay Pit Floods. `01` is ON, `00` is OFF
 * 0x126384 – End date. Set to `00` to disable the game over after a certain date
+
+Information by courtesy of [DDRJake](https://www.twitch.tv/ddrjake).

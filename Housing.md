@@ -1,11 +1,5 @@
 # Housing
 
-Sourced from:
-
-* https://mmxl.wz.cz/c3a/housing.html
-* https://gaming.stackexchange.com/questions/282520/housing-steps-and-requirements-in-caesar-3
-* c3_model.txt from the game files
-
 | Housing Level | Size         | Population | Services                       | Entert. | Goods           | Prosp. Rat. | Tax Mult. | Crime | Des. Evo. / Devo. |
 |---------------|--------------|------------|--------------------------------|---------|-----------------|-------------|-----------|-------|-------------------|
 | Small Tent    | 1x1 <br> 2x2 | 5 <br> 20  | n/a                            | 0       |                 | 5           | 1         | 25+3  | -10 / -99         |
@@ -29,5 +23,8 @@ Sourced from:
 | Large Palace  | 4x4          | 190        | n/a                            | 70      |                 | 1500        | 15        | 5+1   | 90  / 76          |
 | Luxury Palace | 4x4          | 200        | n/a                            | 80      |                 | 1750        | 16        | 5+1   | 100 / 85          |
 
-[//]: # (TODO: Base tax per person per level)
+## Sources
 
+* [Augustus Encyclopedia](https://mmxl.wz.cz/c3a/housing.html)
+* [Gaming StackExchange](https://gaming.stackexchange.com/questions/282520/housing-steps-and-requirements-in-caesar-3)
+* c3_model.txt from the C3 game files

@@ -3,11 +3,11 @@
 ## Cap
 
 The prosperity cap is calculated from the quality of a city's [housing](/Housing.md).
-Every housing type has a prosperity rating. Let's assume we have a city with 100
-Small Casas and 10 Medium Palaces. Small Casas have a prosperity rating of 35, Medium
-Palaces have a prosperity rating of 900. To calculate our prosperity cap, we multiply
-the number of buildings of any given building type with its prosperity rating and 
-add them together. Then we divide the result by the overall number of houses.
+Every housing type has a prosperity rating. Let's assume a city has 100 Small Casas 
+and 10 Medium Palaces. Small Casas have a prosperity rating of 35, Medium Palaces have 
+a prosperity rating of 900. To calculate the prosperity cap, we multiply the number 
+of buildings in any housing level with their prosperity rating and add these up. 
+Then we divide the result by the overall number of houses.
 
 In our example:
 
@@ -21,10 +21,10 @@ This will then be rounded down to 100, the maximum possible prosperity value.
 
 ## Gain Rate
 
-Prosperity is calculated once a year in January.<sup>1</sup> A maximum number of 10 prosperity 
-points can be gained per year. To calculate the points, the following table can be 
-used. The values are added up and represent the number of prosperity points awarded for 
-the past year.
+Prosperity is calculated once a year in January with one notable exception<sup>1</sup>. 
+A maximum number of 10 prosperity points can be gained per year. To calculate the points, 
+the following table can be used. The values are added up and represent the number of 
+prosperity points awarded for the past year.
 
 ### Determinants
 

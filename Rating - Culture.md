@@ -1,7 +1,7 @@
 # Culture
 
-Culture is updated monthly. The following table shows the percentage of each 
-culture type's coverage in relation to the points.
+Culture is updated monthly. The following table shows the relation between 
+the coverage percentage and the gained culture points per culture type.
 
 **Religion**
 
@@ -12,7 +12,7 @@ culture type's coverage in relation to the points.
 | \> 70%   | 14     |
 | \> 50%   | 9      |
 | \> 30%   | 3      |
-| <= 30%   | 0      |
+| ≤ 30%    | 0      |
 
 **Theatre**
 
@@ -23,7 +23,7 @@ culture type's coverage in relation to the points.
 | \> 70%   | 12     |
 | \> 50%   | 8      |
 | \> 30%   | 3      |
-| <= 30%   | 0      |
+| ≤ 30%    | 0      |
 
 **Libraries**
 
@@ -34,7 +34,7 @@ culture type's coverage in relation to the points.
 | \> 70%   | 8      |
 | \> 50%   | 4      |
 | \> 30%   | 2      |
-| <= 30%   | 0      |
+| ≤ 30%    | 0      |
 
 **Schools**
 
@@ -45,7 +45,7 @@ culture type's coverage in relation to the points.
 | \> 70%   | 6      |
 | \> 50%   | 4      |
 | \> 30%   | 1      |
-| <= 30%   | 0      |
+| ≤ 30%    | 0      |
 
 **Academies**
 
@@ -56,6 +56,6 @@ culture type's coverage in relation to the points.
 | \> 70%   | 4      |
 | \> 50%   | 2      |
 | \> 30%   | 1      |
-| <= 30%   | 0      |
+| ≤ 30%    | 0      |
 
-[Julius /src/city/ratings.c#L306](https://github.com/bvschaik/julius/blob/016d5254c2b734dac5c56abccac05c0ba74cb934/src/city/ratings.c#L306)
+[Source: Julius /src/city/ratings.c#L306](https://github.com/bvschaik/julius/blob/016d5254c2b734dac5c56abccac05c0ba74cb934/src/city/ratings.c#L306)

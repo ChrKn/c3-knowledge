@@ -1,7 +1,5 @@
 # Entertainment
 
-[Source](https://caesar3.heavengames.com/cgi-bin/caeforumscgi/display.cgi?action=st&fn=2&tn=2859)
-
 ## Base Values
 
 These are applied to a house when a walker passes by.
@@ -31,3 +29,5 @@ Note: Hippodrome coverage is always perfect.
 | 0.20-0.29      | Poor            |
 | 0.10-0.19      | Very Poor       |
 | 0.00-0.09      | None            |
+
+[Source: Heaven Games](https://caesar3.heavengames.com/cgi-bin/caeforumscgi/display.cgi?action=st&fn=2&tn=2859)

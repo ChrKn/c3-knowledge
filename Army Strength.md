@@ -1,7 +1,7 @@
 # Calculating Army Strength for Away Missions
 
 Sometimes Caesar asks for a Legion or two to help a threatened city. The
-following tables show how to calculate how many legions you need to send 
+following tables show how to calculate how many legions one needs to send 
 to successfully defend the city. 
 
 | Strength indicator | Numerical Strength | 
@@ -24,6 +24,6 @@ That leaves us with:
 | Auxiliaries trained   | 16<sup>1</sup> | 2          | 32       |
 
 <sup>1</sup> The base strength assumes a fully fledged out legion of 16 soldiers. 
-If you have fewer than that, you need to reduce the base strength accordingly. So
-an untrained 10-soldier legion has a base strength of 10, multiplied by 2 
-resulting in a strength of 20.
+If you have fewer soldiers in a legion, you need to reduce the base strength 
+accordingly. So an untrained 10-soldier legion has a base strength of 10, 
+multiplied by 2 resulting in a strength of 20.

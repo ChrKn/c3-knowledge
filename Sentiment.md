@@ -82,7 +82,8 @@ was used. The values we needed were found in `c3.eng`.
 | = 0 Dn             | ±0                               |
 | < 0 Dn             | $truncate(\frac{difference}{2})$ |
 
-Note: The formula for a negative difference is integer-division, if the result is zero, -1 is applied. 
+Note: The formula for a negative difference is integer-division, if the result truncates to zero, 
+-1 is applied. 
 
 [Julius: /src/city/sentiment.c#L128](https://github.com/bvschaik/julius/blob/016d5254c2b734dac5c56abccac05c0ba74cb934/src/city/sentiment.c#L128)
  

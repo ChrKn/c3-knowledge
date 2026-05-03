@@ -6,8 +6,6 @@ To see how desirability affects housing levels, see [Housing.md](/Housing.md).
 
 An overview of buildings' desirability effects at different ranges.
 
-[Source: Heaven Games](https://caesar3.heavengames.com/downloads/showfile.php?fileid=1197)
-
 **Administrative**
 
 | Structure         | 1  | 2  | 3  | 4  | 5  | 6 |
@@ -153,6 +151,7 @@ An overview of buildings' desirability effects at different ranges.
 | Reservoir | -6 | -4 | -2 | 0 | 0 | 0 |
 | Well      | -1 | 0  | 0  | 0 | 0 | 0 |
 
+[Source: Heaven Games](https://caesar3.heavengames.com/downloads/showfile.php?fileid=1197)
 
 ## Source to check the values
 
@@ -162,13 +161,13 @@ of values concerning buildings.
 If we look at this line: `56,Triumphal Arch,{,0,18,2,3,5,0,0,0,},` we can extract 
 the following information concerning desirability: 
 
-1. Start value (18)
-2. Step length (2)
-3. Desirability change per step (3)
-4. Maximum desirability range (5)
+1. Start value (18 points)
+2. Step length (2 tiles)
+3. Desirability change per step (3-point increase)
+4. Maximum desirability range (5 tiles)
 
-That means a triumphal arch has a desirability value of 18 at a range of one or two tiles. Then 
-it will increase to 21 for the tiles three and four, and then finally to 24 for tile five.
+That means a Triumphal Arch has a desirability value of 18 at a range of one or two tiles. Then 
+it will increase to 21 for the tiles three and four, and finally to 24 for tile five.
 
 Another example: `70,Market,{,40,-2,1,1,6,5,0,0,}`
 
