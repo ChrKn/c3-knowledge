@@ -31,16 +31,16 @@ multiplier (dm).
 
 | Difficulty | Multiplier |
 |------------|------------|
-| Very Easy  | 300        |
-| Easy       | 200        |
-| Normal     | 150        |
-| Hard       | 100        |
-| Very Hard  | 75         |
+| Very Easy  | 300%       |
+| Easy       | 200%       |
+| Normal     | 150%       |
+| Hard       | 100%       |
+| Very Hard  | 75%        |
 
 [Source: Julius /src/game/difficulty.c#L6](https://github.com/bvschaik/julius/blob/016d5254c2b734dac5c56abccac05c0ba74cb934/src/game/difficulty.c#L6)
 
-When calculating the income a taxed house's population (pop) pays, the game first calculates
-the difficulty adjusted tax rate modifier (trm):
+When calculating the tax amount a house's population (pop) pays, the game first calculates
+the difficulty-adjusted tax rate multiplier (trm):
 
 $$ 
 trm = \frac{tm \times dm }{100}
@@ -54,7 +54,7 @@ $$
 
 [Source: Julius /src/city/finance.c#L188](https://github.com/bvschaik/julius/blob/016d5254c2b734dac5c56abccac05c0ba74cb934/src/city/finance.c#L188)
 
-Then factors in the population to calculate their payments if the tax was 100%:
+Then factors in the population to calculate their payments if the tax rate was 100%:
 
 $$
 max = pop \times trm
