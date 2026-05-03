@@ -61,13 +61,13 @@ was used. The values we needed were found in `c3.eng`.
 
 ## Unemployment
 
-| Rate  | Sent. Change |
-|-------|--------------|
-| \> 25 | -3           |
-| \> 17 | -2           |
-| \> 10 | -1           |
-| \> 4  | 0            |
-| ≤ 4   | 1            |
+| Rate   | Sent. Change |
+|--------|--------------|
+| \> 25% | -3           |
+| \> 17% | -2           |
+| \> 10% | -1           |
+| \> 4%  | 0            |
+| ≤ 4%   | 1            |
 
 [Julius: /src/city/sentiment.c#L150](https://github.com/bvschaik/julius/blob/016d5254c2b734dac5c56abccac05c0ba74cb934/src/city/sentiment.c#L150)
 
@@ -104,7 +104,7 @@ The game penalizes the player for having too many tents in their city. The penal
 on how far developed the city otherwise is. The following tables show the penalty for each case. The
 first table that applies is used.
 
-### Case 1: The city has patricians
+### Case 1: The city has patricians (villa or palace dwellers)
 
 | Percentage of Tents | Sent. Penalty |
 |---------------------|---------------|
