@@ -1,5 +1,9 @@
 # Housing
 
+Note that entertainment is not included in the services but as a separate 
+column. To understand how the entertainment value for a dwelling is calculated, 
+[see here](/Entertainment.md).
+
 | Housing Level | Size         | Population | Services                       | Entert. | Goods           | Prosp. Rat. | Tax Mult. | Crime | Des. Evo. / Devo. |
 |---------------|--------------|------------|--------------------------------|---------|-----------------|-------------|-----------|-------|-------------------|
 | Small Tent    | 1x1 <br> 2x2 | 5 <br> 20  | n/a                            | 0       |                 | 5           | 1         | 25+3  | -10 / -99         |
