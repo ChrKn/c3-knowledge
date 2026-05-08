@@ -34,7 +34,9 @@ An overview of buildings' desirability effects at different ranges.
 | Structure            | 1  | 2  | 3  | 4 | 5 | 6 |
 |----------------------|----|----|----|---|---|---|
 | Bridge, Foot or Ship | 0  | 0  | 0  | 0 | 0 | 0 |
+| Shipyard             | -8 | -8 | -6 | 0 | 0 | 0 |
 | Dock                 | -8 | -8 | -6 | 0 | 0 | 0 |
+| Wharf                | -8 | -8 | -6 | 0 | 0 | 0 |
 | Engineering Post     | 0  | 0  | 0  | 0 | 0 | 0 |
 | Gardens              | 3  | 2  | 1  | 0 | 0 | 0 |
 | Plaza                | 4  | 2  | 0  | 0 | 0 | 0 |
@@ -94,10 +96,8 @@ An overview of buildings' desirability effects at different ranges.
 |---------------------|----|----|----|----|---|---|
 | Granary             | -4 | -2 | 0  | 0  | 0 | 0 |
 | Market              | -2 | -1 | 0  | 1  | 2 | 3 |
-| Shipyard            | -8 | -8 | -6 | 0  | 0 | 0 |
 | Warehouse Space     | 0  | 0  | 0  | 0  | 0 | 0 |
 | Warehouse Tower     | -5 | -5 | -3 | 0  | 0 | 0 |
-| Wharf               | -8 | -8 | -6 | 0  | 0 | 0 |
 | Farm, Fruit         | 2  | 3  | 0  | 0  | 0 | 0 |
 | Farm, Olive         | 2  | 3  | 0  | 0  | 0 | 0 |
 | Farm, Pig           | -2 | -1 | 0  | 0  | 0 | 0 |
@@ -182,3 +182,5 @@ the value becomes positive starting at a distance of four tiles.
 
 Negative change also exists, for example `30,Ampitheatre,{,100,4,1,-1,4,12,0,0,},` with a 
 starting desirability value of four, decreased by one for each tile up to four.
+
+[Source: Julius /src/building/model.c#L83](https://github.com/bvschaik/julius/blob/016d5254c2b734dac5c56abccac05c0ba74cb934/src/building/model.c#L83)
