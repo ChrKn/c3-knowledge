@@ -1,34 +1,49 @@
 # Production
 
 All production rates assume perfect transportation. That means the cart pusher is back
-at the production building the moment the next load is ready. 
+at the production building the moment the next load is ready, and the building is always
+supplied with raw resources (if applicable).
 
 ## Cartloads vs. Units
 
 $1\ cartload = 100\ units$. Units are being used by markets and houses, while cartloads
-are being used by production buildings / warehouses. 
+are being used by production buildings / warehouses.
+
+## Resources and Goods
+
+### Olives, Vines, Iron, Timber, Clay
+
+`9.6 cartloads` per year.
+
+### Oil, Wine, Weapons, Furniture, Pottery, Marble
+
+`4.8 cartloads` per year.
 
 ## Food
 
 Be aware that food is being eaten in order: `Wheat > Vegetables > Fruit > Meat`.
 Meaning if a house that requires only one type of food has wheat and meat, 
-the inhabitants will only eat wheat until it is used up, then eat the meat. 
+the inhabitants will only eat wheat until it is used up, then start eating the meat. 
 The same goes for markets. They will always try to get the highest food type on 
 the list with priority.
 
 ### Wheat Farms
 
-Food for about `320 people (or 19.2 cartloads)` on dessert and mediterran 
-maps and `160 (9.6 cartloads)` on northern.
+Food for `320 people (or 19.2 cartloads)` on dessert and central maps and 
+`160 people (or 9.6 cartloads)` on northern maps.  
+Wheat is also special as in markets will get and store 800 units of wheat from 
+a granary instead of 600 units for all other food types. 
 
 ### Fruit, Meat, Vegetables
 
-Food for about `160 people (or 9.6 cartloads)` regardless of map climate.
+Food for `160 people (or 9.6 cartloads)` regardless of map climate.
 
 ### Fishing
 
 Short: It's complicated and involves counting of tiles and estimations. You can
-[read up on it here](https://caesar3.heavengames.com/cgi-bin/caeforumscgi/display.cgi?action=st&fn=2&tn=3266).  
+[read up on it here](https://caesar3.heavengames.com/cgi-bin/caeforumscgi/display.cgi?action=st&fn=2&tn=3266). 
+Be aware that the formulas are based on experience, not on source code or official 
+documentation.
 
 The following formulas apply. First, we calculate the time in in-game ticks per 
 cartload ($T_{cl}$) using the distance in tiles ($D_t$) from the wharf to the fishing 
@@ -78,16 +93,6 @@ This gives us the following results:
 | 14    | 14.769     | 246       |
 | 15    | 13.714     | 228       |
 | 16    | 13.714     | 228       |
-
-## Resources and Goods
-
-### Olives, Vines, Iron, Timber, Clay
-
-`9.6 cartloads` per year.
-
-### Oil, Wine, Weapons, Furniture, Pottery, Marble
-
-`4.8 cartloads` per year.
 
 ## Military
 
