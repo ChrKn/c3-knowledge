@@ -30,28 +30,54 @@ Food for about `160 people (or 9.6 cartloads)` regardless of map climate.
 Short: It's complicated and involves counting of tiles and estimations. You can
 [read up on it here](https://caesar3.heavengames.com/cgi-bin/caeforumscgi/display.cgi?action=st&fn=2&tn=3266).  
 
-The following table is an approximation. Distance is in tiles from Wharf to Fishing 
-point. 
+The following formulas apply. First, we calculate the time in in-game ticks per 
+cartload ($T_{cl}$) using the distance in tiles ($D_t$) from the wharf to the fishing 
+point.  
+This value is then used to calculate the fish production in cartloads per year 
+($F_{cl/y}$) with the second formula.  
+And since cartloads are quite hard to grasp, 
+we also calculate the people fed per year ($P_{f/y}$) based on the assumption 
+that every person eats six units of food per year.
 
-| Distance | Food/Month | Food/Year |
-|----------|------------|-----------|
-| 0        | 38.400     | 460.800   |
-| 1        | 38.400     | 460.800   |
-| 2        | 32.000     | 384.000   |
-| 3        | 27.428     | 329.136   |
-| 4        | 27.428     | 329.136   |
-| 5        | 24.000     | 288.000   |
-| 6        | 24.000     | 288.000   |
-| 7        | 21.333     | 255.996   |
-| 8        | 19.200     | 230.400   |
-| 9        | 19.200     | 230.400   |
-| 10       | 17.454     | 209.448   |
-| 11       | 17.454     | 209.448   |
-| 12       | 16.000     | 192.000   |
-| 13       | 14.769     | 177.228   |
-| 14       | 14.769     | 177.228   |
-| 15       | 13.714     | 164.568   |
-| 16       | 13.714     | 164.568   |
+$$
+\begin{flalign}
+& T_{cl} = 50 \times \left\lceil \frac{30 \times D_t + 211}{50} \right\rceil &
+\end{flalign}
+$$
+
+$$
+\begin{flalign}
+& F_{cl/y} = \frac{800}{T_{cl}} \times 12 & 
+\end{flalign}
+$$
+
+$$
+\begin{flalign}
+& P_{f/y} = \left\lfloor \frac{F_{cl/y} \times 100}{6} \right\rfloor &
+\end{flalign}
+$$
+
+This gives us the following results:
+
+| $D_t$ | $F_{cl/y}$ | $P_{f/y}$ |
+|-------|------------|-----------|
+| 0     | 38.400     | 640       |
+| 1     | 38.400     | 640       |
+| 2     | 32.000     | 533       |
+| 3     | 27.428     | 457       |
+| 4     | 27.428     | 457       |
+| 5     | 24.000     | 400       |
+| 6     | 24.000     | 400       |
+| 7     | 21.333     | 355       |
+| 8     | 19.200     | 320       |
+| 9     | 19.200     | 320       |
+| 10    | 17.454     | 290       |
+| 11    | 17.454     | 290       |
+| 12    | 16.000     | 266       |
+| 13    | 14.769     | 246       |
+| 14    | 14.769     | 246       |
+| 15    | 13.714     | 228       |
+| 16    | 13.714     | 228       |
 
 ## Resources and Goods
 
@@ -65,6 +91,6 @@ point.
 
 ## Military
 
-One barracks can produce $21.\overline{3}$ Soldiers per year.
+One barracks produces $21.\overline{3}$ Soldiers per year given perfect weapon availability.
 
 [Source: Heaven Games (Brugle)](https://caesar3.heavengames.com/cgi-bin/caeforumscgi/display.cgi?action=st&fn=2&tn=7508)
