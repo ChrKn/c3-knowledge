@@ -4,10 +4,13 @@ All production rates assume perfect transportation. That means the cart pusher i
 at the production building the moment the next load is ready, and the building is always
 supplied with raw resources (if applicable).
 
-## Cartloads vs. Units
+## Cartloads vs. Consumption Units
 
-$1\ cartload = 100\ units$. Units are being used by markets and houses, while cartloads
-are being used by production buildings / warehouses.
+$1\ cartload = 100\ consumption \ units$. Cartloads are what production buildings 
+produce and store in warehouses or deliver to production buildings that do further 
+processing (Clay to Pottery e.g.). They are used for production and trade.  
+Consumption units (usually simply called "units") are what people consume. One cartload
+of a product becomes 100 units when delivered to a granary, market, or house.
 
 ## Resources and Goods
 
