@@ -20,7 +20,9 @@ of a product becomes 100 units when delivered to a granary, market, or house.
 
 ### Oil, Wine, Weapons, Furniture, Pottery, Marble
 
-`4.8 cartloads` per year.
+`4.8 cartloads` per year. Note that one cartload of a raw resource always becomes one 
+cartload of the finished product. (1 cl of vines becomes 1 cl of wine, 1 cl timber 
+becomes 1 cl of furniture, etc.)
 
 ## Food
 
@@ -30,18 +32,18 @@ the inhabitants will only eat wheat until it is used up, then start eating the m
 The same goes for markets. They will always try to get the highest food type on 
 the list with priority.
 
-### Wheat Farms
+### Wheat
 
 Food for `320 people (or 19.2 cartloads)` on dessert and central maps and 
 `160 people (or 9.6 cartloads)` on northern maps.  
 Wheat is also special as in markets will get and store 800 units of wheat from 
 a granary instead of 600 units for all other food types. 
 
-### Fruit, Meat, Vegetables
+### Fruit, Meat, and Vegetables
 
 Food for `160 people (or 9.6 cartloads)` regardless of map climate.
 
-### Fishing
+### Fish
 
 Short: It's complicated and involves counting of tiles and estimations. You can
 [read up on it here](https://caesar3.heavengames.com/cgi-bin/caeforumscgi/display.cgi?action=st&fn=2&tn=3266). 
@@ -52,10 +54,10 @@ The following formulas apply. First, we calculate the time in in-game ticks per
 cartload ($T_{cl}$) using the distance in tiles ($D_t$) from the wharf to the fishing 
 point.  
 This value is then used to calculate the fish production in cartloads per year 
-($F_{cl/y}$) with the second formula.  
-And since cartloads are quite hard to grasp, 
-we also calculate the people fed per year ($P_{f/y}$) based on the assumption 
-that every person eats six units of food per year.
+($F_{cl/y}$) utilizing the second formula.  
+And since cartloads are quite hard to grasp, we also calculate the people fed per 
+year ($P_{f/y}$) based on the assumption that every pop eats six units of food 
+per year.
 
 $$
 \begin{flalign}
