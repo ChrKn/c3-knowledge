@@ -27,3 +27,12 @@ That leaves us with:
 If you have fewer soldiers in a legion, you need to reduce the base strength 
 accordingly. So an untrained 10-soldier legion has a base strength of 10, 
 multiplied by 2 resulting in a strength of 20.
+
+## A Warning
+
+Sending a force of more than 255 strength points to defend a city always results in a loss.
+This is due to the strength being stored in an 8-bit unsigned integer<sup>2</sup>, so 288 would 
+become 32. The maximum strength points an attack can have are 200, though. So no point 
+in ever sending more than five academy-trained legions to defend a city.
+
+<sup>2</sup> [Source: Julius /src/city/data_private.h#L101](https://github.com/bvschaik/julius/blob/016d5254c2b734dac5c56abccac05c0ba74cb934/src/city/data_private.h#L101)
