@@ -13,11 +13,13 @@
 
 ## Offsets
 
+### General Game Settings
+
 * 0x126140 – Set to `01` for favour locked at 50 and removal of all win conditions. Lets you play forever.
 * 0x126244 – Gladiator Revolt.  `01` is ON, `00` is OFF
-* 0x126248 – Year of gladiator revolt
+* 0x126248 – Year of gladiator revolt. 4 Bytes.
 * 0x12624c – Change of Emperor (resets favour to 50) `01` is ON, `00` is OFF
-* 0x126250 – Year change of Emperor occurs
+* 0x126250 – Year change of Emperor occurs. 4 Bytes.
 * 0x126254 – Sea trade problems. `01` is ON, `00` is OFF
 * 0x126258 – Land trade problems. `01` is ON, `00` is OFF
 * 0x12625c – Rome raises wages. `01` is ON, `00` is OFF
@@ -29,7 +31,7 @@
 
 Information by courtesy of [DDRJake](https://www.twitch.tv/ddrjake).
 
-## Changing the month, an invasion takes place
+### Changing the month, an invasion takes place
 
 The months are indexed from 0 to 11. 0 is January, 1 is February, etc.
 
@@ -38,21 +40,5 @@ are possible, though.
 
 * 0x1262A4 – invasion[0].month
 * 0x1262A5 – invasion[1].month
-* 0x1262A6 – invasion[2].month
-* 0x1262A7 – invasion[3].month
-* 0x1262A8 – invasion[4].month
-* 0x1262A9 – invasion[5].month
-* 0x1262AA – invasion[6].month
-* 0x1262AB – invasion[7].month
-* 0x1262AC – invasion[8].month
-* 0x1262AD – invasion[9].month
-* 0x1262AE – invasion[10].month
-* 0x1262AF – invasion[11].month
-* 0x1262B0 – invasion[12].month
-* 0x1262B1 – invasion[13].month
-* 0x1262B2 – invasion[14].month
-* 0x1262B3 – invasion[15].month
-* 0x1262B4 – invasion[16].month
-* 0x1262B5 – invasion[17].month
-* 0x1262B6 – invasion[18].month
+* ...
 * 0x1262B7 – invasion[19].month
