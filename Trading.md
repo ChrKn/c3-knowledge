@@ -32,3 +32,11 @@ $$
 $$
 
 [Source: Julius /src/empire/empire.c#L183](https://github.com/bvschaik/julius/blob/016d5254c2b734dac5c56abccac05c0ba74cb934/src/empire/empire.c#L183)
+
+## Natives
+
+Each **native meeting hut** can spawn one trader per month if the hut is placated 
+by a missionary and doesn't have a trader spawned already. 
+The trader walks to the nearest warehouse with goods set to export and can buy up 
+to three. That gives the native trader a **capacity to buy 36 goods per year** 
+given he can make the round trip in a month.
