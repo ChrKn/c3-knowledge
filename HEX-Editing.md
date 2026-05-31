@@ -35,8 +35,8 @@ Information by courtesy of [DDRJake](https://www.twitch.tv/ddrjake).
 
 The months are indexed from 0 to 11. 0 is January, 1 is February, etc.
 
-The game only plans invasions for the months 2 to 9, so March to October. Other values 
-are possible, though.
+The game only plans invasions for the months 2 to 9, so March to October. Manually changing
+them to any other month will work fine, though.
 
 * 0x1262A4 – invasion[0].month
 * 0x1262A5 – invasion[1].month
