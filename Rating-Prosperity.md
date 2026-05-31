@@ -40,11 +40,18 @@ prosperity points awarded for the past year.
 | \> 10% of population are patricians            | +1    |
 | \> 30% of population lives in shacks or lower  | -1    |
 | Failure to pay tribute                         | -1    |
-| Active Hippodrome                              | +1    |
+| Active Hippodrome<sup>2</sup>                  | +1    |
 
 [Source: Julius /src/city/ratings.c#L398](https://github.com/bvschaik/julius/blob/016d5254c2b734dac5c56abccac05c0ba74cb934/src/city/ratings.c#L398)
 
+---
+
 <sup>1</sup> There is an additional "used bailout" modifier of -3 that is applied immediately
-when the bailout money from Caesar is used. This is not included in the table above, since it is
-not used for the prosperity calculation at the end of the year.   
+when the bailout money from Caesar is used.  
 [Source: Julius /src/city/ratings.c#L58](https://github.com/bvschaik/julius/blob/016d5254c2b734dac5c56abccac05c0ba74cb934/src/city/ratings.c#L58)
+
+<sup>2</sup> A Hippodrome is considered active if it has an ongoing show. This is evaluated by checking
+`b->data.entertainment.days1`, which is the number of days the current show will continue to run.  
+It follows that a Chariot Maker sending charioteers to the Hippodrome is a pre-requisite for getting 
+this point.  
+[Source: Julius /src/city/entertainment.c#L90](https://github.com/bvschaik/julius/blob/016d5254c2b734dac5c56abccac05c0ba74cb934/src/city/entertainment.c#L90)
